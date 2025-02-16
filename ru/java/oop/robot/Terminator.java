@@ -1,0 +1,18 @@
+package ru.java.oop.robot;
+
+public class Terminator implements IRobot{
+    @Override
+    public void move() {
+        System.out.println("Terminator move");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("Terminator stop");
+    }
+
+    @Override
+    public void flight() {
+        System.out.println("Terminator flight");
+    }
+}
