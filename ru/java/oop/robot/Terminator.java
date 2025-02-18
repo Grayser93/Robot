@@ -1,7 +1,6 @@
 package ru.java.oop.robot;
 
-public class Terminator implements IRobot{
-    private String name;
+public class Terminator extends ARobot{
     @Override
     public void move() {
         System.out.println("Terminator move");
@@ -17,12 +16,4 @@ public class Terminator implements IRobot{
         System.out.println("Terminator flight");
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
