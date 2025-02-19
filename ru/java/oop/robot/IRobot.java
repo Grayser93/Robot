@@ -5,6 +5,7 @@ public interface IRobot {
     void move();
     void stop();
     void flight();
+    void talk();
 
     String getName();
 }

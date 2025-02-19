@@ -1,6 +1,14 @@
 package ru.java.oop.robot;
 
 public class Terminator extends ARobot{
+
+    public Terminator() {
+    }
+
+    public Terminator(String name) {
+        super(name);
+    }
+
     @Override
     public void move() {
         System.out.println("Terminator move");
@@ -16,4 +24,8 @@ public class Terminator extends ARobot{
         System.out.println("Terminator flight");
     }
 
+    @Override
+    public void talk() {
+        System.out.println("term talk");
+    }
 }

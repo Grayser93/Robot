@@ -1,6 +1,12 @@
 package ru.java.oop.robot;
 
 public class Robocop extends ARobot{
+    public Robocop() {
+    }
+
+    public Robocop(String name) {
+        super(name);
+    }
 
     @Override
     public void move() {
@@ -17,5 +23,8 @@ public class Robocop extends ARobot{
         System.out.println("Robocop flight");
     }
 
-
+    @Override
+    public void talk() {
+        System.out.println("robo talk");
+    }
 }
