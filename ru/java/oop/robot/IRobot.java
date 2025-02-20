@@ -8,4 +8,5 @@ public interface IRobot {
     void talk();
 
     String getName();
+    Wing getWing();
 }
