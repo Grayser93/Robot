@@ -1,6 +1,6 @@
 package ru.java.oop.robot;
 
-public interface IRobot {
+public interface IRobot extends ITechnic {
 
     void move();
     void stop();
@@ -8,5 +8,5 @@ public interface IRobot {
     void talk();
 
     String getName();
-    Wing getWing();
+    IWing getWing();
 }

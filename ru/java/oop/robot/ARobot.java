@@ -4,13 +4,13 @@ public abstract class ARobot implements IRobot {
     public ARobot() {
     }
 
-    public ARobot(String name, Wing wing) {
+    public ARobot(String name, IWing wing) {
         this.name = name;
         this.wing = wing;
     }
 
     private String name;
-    private Wing wing;
+    private IWing wing;
 
     @Override
     public String getName() {
@@ -22,11 +22,21 @@ public abstract class ARobot implements IRobot {
     }
 
     @Override
-    public Wing getWing() {
+    public IWing getWing() {
         return wing;
     }
 
-    public void setWing(Wing wing) {
+    public void setWing(IWing wing) {
         this.wing = wing;
+    }
+
+    @Override
+    public void on() {
+        System.out.println("on");
+    }
+
+    @Override
+    public void off() {
+        System.out.println("off");
     }
 }

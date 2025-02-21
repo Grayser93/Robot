@@ -5,7 +5,7 @@ public class Terminator extends ARobot{
     public Terminator() {
     }
 
-    public Terminator(String name, Wing wing) {
+    public Terminator(String name, IWing wing) {
         super(name, wing);
     }
 

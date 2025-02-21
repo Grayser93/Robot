@@ -1,6 +1,6 @@
 package ru.java.oop.robot;
 
-public interface Wing {
+public interface IWing {
 
     void open();
 

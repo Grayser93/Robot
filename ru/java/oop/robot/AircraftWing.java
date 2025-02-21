@@ -1,6 +1,6 @@
 package ru.java.oop.robot;
 
-public class AircraftWing implements Wing{
+public class AircraftWing implements IWing {
 
     private int size;
     @Override
