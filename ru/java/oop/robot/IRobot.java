@@ -2,7 +2,9 @@ package ru.java.oop.robot;
 
 public interface IRobot {
 
-    void move();
+    default void move(){
+        System.out.println("default move = " + getName());
+    };
 
     void stop();
 

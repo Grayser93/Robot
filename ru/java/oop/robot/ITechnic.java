@@ -1,6 +1,13 @@
 package ru.java.oop.robot;
 
 public interface ITechnic {
-    void on();
-    void off();
+    default void on() {
+        System.out.println("default on");
+    }
+
+    default void off() {
+        System.out.println("default off");
+        on();
+    }
+
 }
