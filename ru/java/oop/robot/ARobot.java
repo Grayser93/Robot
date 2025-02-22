@@ -1,6 +1,6 @@
 package ru.java.oop.robot;
 
-public abstract class ARobot implements IRobot {
+public abstract class ARobot implements IRobot, ITechnic{
     public ARobot() {
     }
 
